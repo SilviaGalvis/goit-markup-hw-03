@@ -7,8 +7,7 @@
 }
 
 .container {
-  max-width: 1200px;
-  display: block;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -82,17 +81,35 @@
   padding: 20px;
 }
 
+address {
+  font-style: normal;
+}
+
+.button-banner {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  width: 197px;
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: block;
+  padding: 10px;
+  border: #f5f4fa;
+  color: #ffffff;
+  background-color: var(--brand-color);
+}
+
 .banner {
   height: 600px;
   left: -4px;
   background-color: #2f303a;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.banner-content {
-  padding: 230px;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .section-list {
@@ -204,9 +221,13 @@
   font-size: 14px;
   letter-spacing: 0.02em;
   text-decoration: none;
+  width: 128px;
+  height: 38px;
+  background: #f5f4fa;
   border-radius: 4px;
   display: block;
   padding: 10px;
+  border: #f5f4fa;
 }
 
 .button:hover {
@@ -215,15 +236,20 @@
 }
 
 .button-current {
-  background-color: var(--brand-color);
   cursor: pointer;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   text-decoration: none;
+  width: 128px;
+  height: 38px;
+  background: #f5f4fa;
   border-radius: 4px;
   display: block;
   padding: 10px;
+  border: #f5f4fa;
+  color: #ffffff;
+  background-color: var(--brand-color);
 }
 
 .list-portafolio {
