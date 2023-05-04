@@ -1,3 +1,121 @@
+:root {
+  --color: #212121;
+  --brand-color: #2196f3;
+  --font-color: #757575;
+  --hover-color: var(--brand-color);
+}
+
+body {
+  font-family: 'Roboto', 'Arial', Sans-serif;
+  color: var(--color);
+  line-height: 1.3rem;
+}
+
+.nav-container {
+  display: flex;
+  gap: 90px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.item-menu-portafolio {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  padding: 10px;
+  padding-top: 70px;
+}
+
+.contact-item {
+  color: var(--font-color);
+}
+
+.CONTACT-item:hover {
+  color: white;
+  background-color: var(--brand-color);
+}
+
+.contact-item:hover {
+  color: var(--brand-color);
+}
+
+.current {
+  color: var(--brand-color);
+}
+
+.box {
+  height: 600px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 230px;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.button-banner {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  width: 197px;
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  display: block;
+  padding: 10px;
+  border: #f5f4fa;
+  color: #ffffff;
+  background-color: var(--brand-color);
+}
+
+.head {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.banner {
+  height: 600px;
+  left: -4px;
+  background-color: #2f303a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+address {
+  font-style: normal;
+}
+
 /* clases tarea 3 */
 
 * {
@@ -40,10 +158,7 @@
   padding: 0px;
   margin: 0;
   list-style: none;
-}
-
-.menu > .item:not(:last-child) {
-  margin-right: 10px;
+  gap: 50px;
 }
 
 .menu .a {
@@ -51,16 +166,6 @@
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #212121;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-}
-
-.menu .a-heather {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: var(--font-color);
   text-decoration: none;
   display: block;
   padding: 10px;
@@ -76,40 +181,26 @@
   padding: 10px;
 }
 
-.item {
-  display: inline;
-  padding: 20px;
-}
-
-address {
-  font-style: normal;
-}
-
-.button-banner {
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  width: 197px;
-  height: 38px;
-  background: #f5f4fa;
-  border-radius: 4px;
-  display: block;
-  padding: 10px;
-  border: #f5f4fa;
-  color: #ffffff;
-  background-color: var(--brand-color);
-}
-
-.banner {
-  height: 600px;
-  left: -4px;
-  background-color: #2f303a;
+.list-text {
   display: flex;
-  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.icon-box {
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  display: flex;
   justify-content: center;
-  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.banner-content {
+  padding: 20px;
 }
 
 .section-list {
@@ -118,13 +209,6 @@ address {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-}
-
-.list-text {
-  display: flex;
-  padding: 0px;
-  margin: 80px;
-  list-style: none;
 }
 
 .title2 {
@@ -147,18 +231,31 @@ address {
 .item-image {
   display: inline;
   padding: 5px;
+  position: relative;
 }
 
-.item-image:hover {
-  color: white;
-  background-color: var(--brand-color);
+.item-background {
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 10px;
+  background: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-image-text {
+  color: #ffffff;
+  position: absolute;
+  align-items: center;
+  bottom: 20px;
 }
 
 .list-team {
   display: flex;
   margin: 20px;
   list-style: none;
-  justify-content: center;
 }
 
 .item-team {
@@ -172,6 +269,42 @@ address {
   padding: 20px;
 }
 
+.footer {
+  display: flex;
+  padding: 50px;
+  background-color: #2f303a;
+}
+
+.menu-footer {
+  list-style: none;
+  justify-content: left;
+}
+
+.team-clientes {
+  background: #ffffff;
+}
+
+address {
+  display: flex;
+}
+.icon-team {
+  display: flex;
+  padding: 30px;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon-list {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #757575;
+}
+
 .title-team {
   font-style: normal;
   font-weight: 700;
@@ -183,21 +316,56 @@ address {
 }
 
 .content-team {
-  background-color: #ffffff;
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.footer {
-  padding: 50px;
-  background-color: #2f303a;
+.content-clientes {
+  border: 1px solid var(--font-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 170px;
+  height: 81px;
 }
 
-.menu-footer {
-  list-style: none;
+.content-clientes:hover,
+.content-clientes:focus {
+  border: 1px solid #2196f3;
+  color: #2196f3;
+}
+
+.icon-list:hover {
+  color: #ffffff;
+  background-color: var(--brand-color);
+}
+
+svg {
+  fill: currentColor;
+}
+
+.content-clientes:hover + .svg,
+.content-clientes:focus + .svg {
+  fill: #2196f3;
 }
 
 .item-footer {
   padding: 15px;
   width: 250px;
+}
+
+.div-foot {
+  margin-left: 50px;
+}
+
+.icon-foot {
+  display: flex;
+  list-style: none;
 }
 
 /* clases tarea 3 portafolio */
@@ -251,7 +419,6 @@ address {
   color: #ffffff;
   background-color: var(--brand-color);
 }
-
 .list-portafolio {
   display: flex;
   margin: 20px;
@@ -267,7 +434,6 @@ address {
 
 .link:hover {
   color: white;
-  background-color: var(--brand-color);
 }
 
 .content-portafolio {
@@ -275,20 +441,12 @@ address {
   border: 1px solid #eeeeee;
 }
 
+.content-portafolio:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 /* clases tarea 2 */
-
-body {
-  font-family: 'Roboto', 'Arial', Sans-serif;
-  color: var(--color);
-  line-height: 1.3rem;
-}
-
-:root {
-  --color: #212121;
-  --brand-color: #2196f3;
-  --font-color: #757575;
-  --hover-color: var(--brand-color);
-}
 
 .a:hover {
   color: var(--brand-color);
@@ -342,6 +500,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: #757575;
+  padding: 10px;
 }
 
 .portafolio {
@@ -373,4 +532,13 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding: 10px;
+}
+
+.title-foot {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
