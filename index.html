@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
+    <link rel="stylesheet" href="css/modern-normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,42 +20,42 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="container page-header">
-      <a class="logo" href="index.html">WebStudio</a>
-      <ul class="menu">
-        <li class="item">
-          <a
-            class="current"
-            href="index.html"
-            target="_self"
-            rel="noopener noreferrer"
-            >Estudio</a
-          >
-        </li>
-        <li class="item">
-          <a
-            href="portafolio.html"
-            class="a"
-            target="_self"
-            rel="noopener noreferrer"
-            >Portafolio</a
-          >
-        </li>
-        <li class="item">
-          <a class="a" href="#" target="_self" rel="noopener noreferrer"
-            >Contactos</a
-          >
-        </li>
-        <li class="item">
-          <a class="a-heather" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="item">
-          <a class="a-heather" href="tel:+525555296000">+525555296000</a>
-        </li>
-      </ul>
-    </header>
+    <div class="head">
+      <header class="container page-header">
+        <nav class="nav-container">
+          <a class="logo" href="index.html">WebStudio</a>
+          <ul class="nav-list">
+            <li class="item current">
+              <a href="index.html" target="_self" rel="noopener noreferrer"
+                >Estudio</a
+              >
+            </li>
+            <li class="item">
+              <a
+                href="portafolio.html"
+                class="a"
+                target="_self"
+                rel="noopener noreferrer"
+                >Portafolio</a
+              >
+            </li>
+            <li class="item">
+              <a class="a" href="#" target="_self" rel="noopener noreferrer"
+                >Contactos</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="menu">
+          <li class="item contact-item">
+            <a href="mailto:info@devstudio.com"> info@devstudio.com</a>
+          </li>
+          <li class="item contact-item">
+            <a href="tel:+525555296000"> +525555296000</a>
+          </li>
+        </ul>
+      </header>
+    </div>
     <!-- Main -->
     <main>
       <section class="banner">
@@ -109,6 +106,9 @@
               alt="Aplicaciones de escritorio"
               width="370"
             />
+            <div class="item-background">
+              <p class="item-image-text">APLICACIONES DE ESCRITORIO</p>
+            </div>
           </li>
           <li class="item-image">
             <img
@@ -116,9 +116,15 @@
               alt="Aplicaciones mobiles"
               width="370"
             />
+            <div class="item-background">
+              <p class="item-image-text">APLICACIONES MOVILES</p>
+            </div>
           </li>
           <li class="item-image">
             <img src="images/image3.jpg" alt="Laptop" width="370" />
+            <div class="item-background">
+              <p class="item-image-text">SOLUCIONES DE DISEÑO</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -179,27 +185,29 @@
       <div class="container">
         <a class="logo" href="index.html">WebStudio</a>
         <address>
-          <ul class="menu-footer">
-            <li class="item-footer">
-              <a
-                class="a-footer"
-                href="https://goo.gl/maps/gsVTC1vpJvbJmhK39"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
-              >
-            </li>
-            <li class="item-footer">
-              <a class="a-footer-grey" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="item-footer">
-              <a class="a-footer-grey" href="tel:+525555296000"
-                >+525555296000</a
-              >
-            </li>
-          </ul>
+          <div class="div-foot">
+            <ul class="menu-footer">
+              <li class="item-footer">
+                <a
+                  class="a-footer"
+                  href="https://goo.gl/maps/gsVTC1vpJvbJmhK39"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+                >
+              </li>
+              <li class="item-footer">
+                <a class="a-footer-grey" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item-footer">
+                <a class="a-footer-grey" href="tel:+525555296000"
+                  >+525555296000</a
+                >
+              </li>
+            </ul>
+          </div>
         </address>
       </div>
     </footer>
